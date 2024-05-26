@@ -44,7 +44,28 @@
        source_ip TEXT,
        destination_ip TEXT,
        attack_type TEXT
-);
+   );
    ```
+   
+## Usage 
+
+1. Run the DDoS tracker script :
+```sh
+python ddos_tracker.py
+``` 
+
+2. The script will start monitoring and logging DDoS attacks in real-time. 
+
+
+
+
+
+
+
+
+
+
+
+
 
  
