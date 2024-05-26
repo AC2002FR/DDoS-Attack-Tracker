@@ -35,15 +35,15 @@
    ```
    
 4. Set up Cassandra by creating a keyspace and table :
-   ```cql
+   ```sh
    CREATE KEYSPACE ddos WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 3};
-USE ddos;
-CREATE TABLE attacks (
-    id UUID PRIMARY KEY,
-    timestamp TIMESTAMP,
-    source_ip TEXT,
-    destination_ip TEXT,
-    attack_type TEXT
+   USE ddos;
+   CREATE TABLE attacks (
+       id UUID PRIMARY KEY,
+       timestamp TIMESTAMP,
+       source_ip TEXT,
+       destination_ip TEXT,
+       attack_type TEXT
 );
    ```
 
