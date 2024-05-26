@@ -56,16 +56,6 @@ python ddos_tracker.py
 
 2. The script will start monitoring and logging DDoS attacks in real-time. 
 
+## License
 
-
-
-
-
-
-
-
-
-
-
-
- 
+This project is licensed under the MIT License - see the LICENSE file for details. 
