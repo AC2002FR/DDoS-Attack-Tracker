@@ -15,11 +15,36 @@
 
 - Python 3.x
 - Cassandra
-- pip (Python package installer)
+- pip 
 
 ## Installation
 
 1. Clone the repository :
    ```sh
    git clone https://github.com/AC2002FR/ddos-attack-tracker.git
-   ``` 
+   ```
+   
+2. Navigate to the project directory :
+   ```sh
+   cd ddos-attack-tracker
+   ```
+
+3. Install the required packages :
+   ```sh
+   pip install -r requirements.txt
+   ```
+   
+4. Set up Cassandra by creating a keyspace and table :
+   ```cql
+   CREATE KEYSPACE ddos WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 3};
+USE ddos;
+CREATE TABLE attacks (
+    id UUID PRIMARY KEY,
+    timestamp TIMESTAMP,
+    source_ip TEXT,
+    destination_ip TEXT,
+    attack_type TEXT
+);
+   ```
+
+ 
